@@ -1,0 +1,72 @@
+{
+  "id": "3814170",
+  "name": "寿童",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19657558",
+      "name": "横线",
+      "font_class": "hr",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "144688",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "145699",
+      "name": "电话_填充",
+      "font_class": "dianhuatianchong",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "201577",
+      "name": "3.1电话",
+      "font_class": "31dianhua",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "340491",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "577402",
+      "name": "向右1",
+      "font_class": "xiangyou1",
+      "unicode": "e775",
+      "unicode_decimal": 59253
+    },
+    {
+      "icon_id": "630094",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "14145122",
+      "name": "向右",
+      "font_class": "xiangyou2",
+      "unicode": "e742",
+      "unicode_decimal": 59202
+    },
+    {
+      "icon_id": "14975731",
+      "name": "查看详情更多",
+      "font_class": "chakanxiangqinggengduo",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}

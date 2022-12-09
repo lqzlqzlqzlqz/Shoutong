@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*=========================reset==================*/
+body,h1,h2,h3,h4,h5,h6,p,a,img,ul,li,dl,dt,dd,ol,input,figure,figcaption{ padding:0; margin:0;}
+img{ display:block; border:0;}
+input{ outline:none;}
+ul,ol{ list-style:none;}
+
+header,footer,nav,section,main,article,figure,aside,figcaption{ display:block;}
+*{ box-sizing:border-box;}
+
+html,body{ height:100%;}
+
+body{ font-size:14px; font-family:"微软雅黑"; color:#333; background:#f0f0f0;}
+
+a{ text-decoration:none; color:#333;}
+
+
+
+/* ************* */
+.all{
+    padding: 10px;
+}
+.focus {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.focus img {
+    width:100%;
+    height: 300px;
+}
+.focus ul {
+    overflow: hidden;
+    margin-left: -100%;
+    width: 500%;
+}
+
+.focus ul li {
+    float: left;
+    width: 20%;
+}
+.focus ol {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin: 0;
+}
+.focus ol li{
+    display: inline-block;  /*使li标签在一行显示*/
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    list-style: none;
+    transition: all .3s;  /*使宽度慢慢变化*/
+}
+.focus ol li.current {
+    width: 15px;
+    background-color: coral;
+}
+.all header ul{
+    display: flex;
+    justify-content: space-between;
+   height: 50px;
+   line-height: 50px;
+}
+
+.titlelog img{
+    width: 150px;
+}
+.newArrival{
+    display: flex;
+    justify-content: space-between;
+}
+.newArrival .iconfont{
+width: 15px;
+height:40px ;
+line-height: 40px;
+background-color: #ffa800;
+color: #f0f0f0;
+margin-left: 0;
+}
+.fourpic{
+    
+    flex: 1;
+    overflow-y:scroll;
+    margin-top: 20px;
+    /* justify-content: space-between;
+    width: 100%; */
+}
+.fourpic ul{
+    display:flex;
+	flex-wrap:wrap;
+	align-items:flex-start;
+    
+}
+.fourpic ul li{
+    width:50%;
+	margin-top:4px;
+	padding:0 2px;
+    text-align: center;
+  
+}
+.fourpic ul li img{
+    width: 50%;
+margin-left: 45px;
+}
+.fourpic ul li span{
+    color: #ea5614;
+}
+.main-contain img{
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 98%;
+    height: 250px;
+    margin-top: 10px;
+}
+.main-contain h3{
+    color: #ea5614;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* 横向时间轴 */
+.time-horizontal {
+    /* list-style-type: none; */
+    border-top: 1px solid #ff5f36;
+    /* max- 800px; */
+    padding: 0px;
+    /* margin: 0px; */
+    margin-top:20px;
+  }
+  .time-horizontal span{
+    color: #ff5f36;
+    /* font-size: 28px; */
+  }
+  .time-horizontal li {
+    float: left;
+    /* font-size: 21px; */
+    position: relative;
+    text-align: center;
+     /* 25%; */
+     width: 25%;
+    padding-top: 10px;
+  }
+  .time-horizontal li:nth-child(2){
+    width: 30%;
+  }
+  .time-horizontal li:nth-child(3){
+    width: 20%;
+  }
+  
+  .time-horizontal li b:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 47%;
+    width: 5px;
+    height: 5px;
+     /* 12px; */
+    /* height: 12px; */
+    border: 2px solid #ff5f36;
+    border-radius: 50%;
+    background:#ff5f36;
+  }
+  .dimg-head{
+    text-align: center;
+    }
+    .picofFour ul{
+        display:flex;
+        flex-wrap:wrap;
+        align-items:flex-start;
+        
+    }
+    .picofFour ul li{
+        width:50%;
+        margin-top:4px;
+        padding:0 2px;
+     
+    }
+    .picofFour ul li img{
+        width: 100%;
+        border-bottom-right-radius: 30px;
+        padding: 10px;
+
+    }
+    .d-bottom{
+        text-align: center;
+        color: #eee;
+        background-color: #ff5f36;
+        width: 146px;
+        height: 51px;
+        line-height: 51px;
+        /* margin-top: 25px; */
+        margin: 0 auto;
+      
+      }
+      .lm{
+        width: 80px;height:40px;line-height:40px;font-size:12px;background-color:chocolate;text-align:center;color: aliceblue;
+      }
+     .lmbox .iconfont{
+        width: 15px;
+        height:40px ;
+        line-height: 40px;
+        background-color: #ffa800;
+        color: #f0f0f0;
+        margin-left: 0;
+        }
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+.BMap_omOutFrame{
+    width: 100px;
+    height:100px
+}
+.underline{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eb5614;
+}
