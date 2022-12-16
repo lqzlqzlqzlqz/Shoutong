@@ -38,8 +38,8 @@ main .second-card {background-color: #f6f6f6;padding: 1px 0;}
 main .second-card .second-card-header {margin-top: 24px;display: flex;justify-content: space-between;align-items: center;color: #010101;}
 main .second-card .second-card-header .second-card-header-left h2 {line-height: 58px;font-size: 37px;font-weight: 600;}
 main .second-card .second-card-header .second-card-header-left h3 {line-height: 55px;font-size: 31px;font-weight: 600;}
-main .second-card .second-card-container {overflow: auto;}
-main .second-card .second-card-body {margin-top: 40px;text-align: center;display: flex;justify-content: space-between;flex-wrap: wrap;gap: 15px;width: 10000px;}
+main .second-card .second-card-container {overflow: hidden;position: relative;}
+main .second-card .second-card-body {margin-top: 40px;text-align: center;display: flex;justify-content: space-between;flex-wrap: wrap;gap: 15px;width: 10000px;position: absolute;left: 0;}
 main .second-card .second-card-body .second-card-body-news {width: 350px;height: 480px;border-radius: 92px 0 92px 0;overflow: hidden;background-color: #fff;}
 /* main .second-card .second-card-body .second-card-body-news .news-img {} */
 main .second-card .second-card-body .second-card-body-news .news-img img {width: 282px;height: 282px;display: block;margin: 43px auto 0;}
@@ -52,8 +52,8 @@ main .second-card .second-card-footer .switch .count {line-height: 46px;padding-
 main .second-card .second-card-footer .switch .count span {color:#ff5f36;font-size: 24px;}
 main .second-card .second-card-footer .switch .switch-button {display: flex;gap: 25px;}
 main .second-card .second-card-footer .switch .switch-button div {width: 53px;height: 53px;border-radius: 50%;box-sizing: border-box;line-height: 53px;text-align: center;font-size: 16px;}
-main .second-card .second-card-footer .switch .switch-button .back {border: 1px solid #ccc;color: #ccc;}
-main .second-card .second-card-footer .switch .switch-button .forward {background-color: #ea5614;color: #fff;}
+main .second-card .second-card-footer .switch .switch-button .back {border: 1px solid #ccc;color: #ccc;cursor: pointer;}
+main .second-card .second-card-footer .switch .switch-button .forward {background-color: #ea5614;color: #fff;cursor: pointer;}
 main .second-card .second-card-footer .prograss {margin-top: 21px;height: 4px;background: linear-gradient(to right,#ff5f36 0%,#ff5f36 40%,#fff 40%,#fff 100%);}
 main .third-card {background: url(../img/666.jpg) no-repeat;background-position: -100px -200px;}
 main .third-card .w .third-card-container {display: flex;padding-top: 50px;}
@@ -72,6 +72,14 @@ main .third-card .third-card-footer .w .footer-container .footer-content {displa
 main .third-card .third-card-footer .w .footer-container .footer-content .dot {width: 13px;height: 13px;border-radius: 50%;background-color: #ff5f36;}
 main .third-card .third-card-footer .w .footer-container .footer-content .count {line-height: 49px;font-size: 27px;color: #ff5f36;font-weight: 600;}
 main .third-card .third-card-footer .w .footer-container .footer-content .describ {line-height: 41px;font-size: 20px;color: #535353;}
+main .forth-card {overflow: hidden;position: relative;height: calc(100vh - 97px);}
+main .forth-card .banner2 {width: 300vw;position: absolute;}
+main .forth-card .banner2 li {float: left;width: 100vw;}
+main .forth-card img {height: 100%;object-fit: cover;}
+main .forth-card .act2 {position: absolute;bottom: 20px;right: 20px;z-index: 10;}
+main .forth-card .act2 li {width: 20px;height: 20px;float: left;background-color: #fff;margin-right: 20px;transition: all .2s;cursor: pointer;}
+main .forth-card .act2 li:hover {box-shadow: 0px 5px 20px #000;z-index: 10;}
+main .forth-card .act2 .active2 {box-shadow: 0px 5px 20px #000;z-index: 10;width: 40px;background-color: rgba(01,80,140,.6);}
 main .fifth-card {background-color: #f6f6f6;}
 main .fifth-card .w {width: 1676px;}
 main .fifth-card .w .header {text-align: center;margin: 20px 0;}
@@ -251,7 +259,7 @@ main .fifth-card .w .footer {display: flex;height: 70px;align-items: center;just
 
     main .second-card .second-card-header .second-card-header-left h2 {line-height: 30px;font-size: 18px;font-weight: 600;}
     main .second-card .second-card-header .second-card-header-left h3 {line-height: 30px;font-size: 16px;font-weight: 600;}
-
+    main .forth-card .banner2,main .forth-card .act2 {display: none;};
 }
 @media (max-width: 768px) {
     main .first-card.card {padding-bottom: 0;}
